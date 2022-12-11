@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Russia Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  
+  
+  <!-- Navigation Bar -->
+
+  <div id="menu" onclick="toggleSidebar(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div id="t">
+    <img src="album.jpeg" id="album">
+    <div id="info">
+      <h1>Death Boulevard</h1>
+      <h2>Casey & Aditya</h2>
+      <p style="color: #edc">
+Russia isn't free. That's a fact.<br>So what are you going to do about it? Protest. Speak up. People may not be able to see the truth through Putin's media control, but you have the facts. People won't want to believe you. Police won't want to hear you. But it's better to live a short, free life than none at all.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sidebar Cover -->
+  <div id="cover">
+    <details>
+      <summary>About Us</summary>
+      <span><p>We are a group of high school students working on a project for our government class. For legal reasons, this website is purely for a school project and should not be taken seriously in any way.</p></span>
+    </details>
+    <details>
+      <summary>What we Do</summary>
+      <span><p>We're here to spread some facts about what is happening in Russia under Putin's control.
+- Putin led Russia into a war against Ukraine, claiming it to be to liberate Ukraine from Nazism, but there is no evidence of such in Ukraine
+- Putin has taken control of the media, and any large news source is controled and censored by the government
+- Prominent independent outlets are declared "foreign agents": Meduza, VTimes, Dozhd, OVD-Info, Mediazona, and iStories
+- Putin portrays the war as relatively peaceful, claiming that around 6,000 Russian soldiers have died. Western estimates puts that number around 100,000.
+- Putin blames Russian war crimes on the West. After pulling out of Bucha, it was revealed there were over 50 civilian deaths to Russian troops, which Putin blamed on Ukraine. Over 1,200 civilian bodies were found in Kyiv after Russian forces withdrew
+- Putin has forced the deportation of thousands of civilians to Russia and there are reports of rape and sexual assult of Ukrainian civilians by Russian forces
+- Putin is silencing any opposition to the war, with vague laws which can be used to imprison or fine any protestors
+- Harsh police force is used against protestors, including detaining over 11,000 civilians in protests after Aleksey Navalny's imprisonment
+- Aleksey Navalny, the only true competitor to Putin in 2018 was disqualified for alleged politically motivated crimes. In 2020, he was poisoned on a flight to Moscow
+- Putin rigs the elections in other ways. By changing the way Duma seats are elected, his party recieved 72% of the seats with less than 50% of the vote in 2021
+- Putin has banned extremist organizations from elections and uses a vote threshold to secure even more seats while destroying smaller parties
+- Putin controls the government from the top down, such that no person in power is independent
+And so much more...
+  </p></span>
+    </details>
+  </div>
+
+  <div id="lyrics">
+    <p>
+[Verse 1]
+This country’s been fighting
+A “special operation” said to be
+Defense from the West
+Who have it out for us, we’re fighting
+But who can mention it
+Unless it’s supporting everything
+Fifty civilians
+Dead in Bucha to Russian forces
+
+[Pre-Chorus]
+We can’t protest, we can’t speak up
+We can’t protest, we can’t spea–
+
+[Chorus]
+The Kremlin controls every thought of this town
+Everyone’s ideas carefully planted
+One day, maybe they’ll all see the corruption
+‘Til then, we fight alone
+
+[Post-Chorus]
+Ah-ah, ah-ah, ah-ah, ah-ah
+Ah-ah, ah-ah, ah-ah
+
+[Verse 2]
+Putin runs elections
+As clean as the oil industry
+Navalny tried to
+Run but he got poisoned, and we fight
+Our protests were met
+With ten thousand citizens detained
+Check the media
+Half are illegal, called “undesirable”
+
+[Pre-Chorus]
+We can’t protest, we can’t speak up
+We can’t protest, we can’t spea–
+
+[Chorus]
+The Kremlin controls every thought of this town
+Everyone’s ideas carefully planted
+One day, maybe they’ll all see the corruption
+‘Til then, we fight alone
+
+[Post-Chorus]
+Ah-ah, ah-ah, ah-ah, ah-ah
+Ah-ah, ah-ah, ah-ah
+
+[Guitar Solo]
+
+[Bridge]
+But still we hear nothing
+From the Kremlin’s media control
+And the people sleep
+Ignorant to all these atrocities
+
+[Chorus]
+The Kremlin controls every thought of this town
+Everyone’s ideas carefully planted
+One day, maybe they’ll all see the corruption
+‘Til then, we fight alone
+
+[Instrumental Outro]
+    </p>
+  </div>
+
+  <iframe src="https://www.youtube.com/embed/Soa3gO7tL-c" id="video"></iframe>
+
+  <div id="footer"><p style="color: #ddd; margin: auto;">Designed by Casey</p></div>
+
+</body>
+
+<script type="text/javascript">
+  document.body.classList.add("theme-def");
+
+
+  function toggleSidebar(e) {
+    e.classList.toggle("change");
+    document.getElementById("cover").classList.toggle("change");
+    document.getElementById("cover").style.transition = "0.4s";
+    setTimeout(() => {  document.getElementById("cover").style.transition = ""; }, 400);
+
+  }
+
+</script>
+
+</html>
