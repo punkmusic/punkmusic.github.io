@@ -55,17 +55,17 @@ p {
 
 #t {
   width: 100vw;
-  background-color: #200;
+  background-color: #500;
   background-image: linear-gradient(to right, #200, #500);
   display: flex;
   min-height: 28vw;
   top: 0;
+  flex-wrap: wrap;
 }
 
 #footer {
   width: 100vw;
-  background-color: #200;
-  background-image: linear-gradient(to right, #200, #500);
+  background-color: #500;
   display: flex;
   min-height: 10vw;
   top: 0;
@@ -102,16 +102,29 @@ p {
 #album {
   width: 20vw;
   height: 20vw;
-  position: absolute;
-  top: 4vw;
-  left: 14vw;
+  display: block;
+  margin-top: 4vw;
+  margin-left: 14vw;
 }
 
 #info {
   width: 50vw;
   display: block;
   margin-top: 4vw;
-  margin-left: 38vw;
+  margin-left: 4vw;
+}
+
+@media (orientation: portrait) {
+  #album {
+    width: 40vw;
+    height: 40vw;
+    margin-left: 30vw;
+  }
+
+  #info {
+    width: 80vw;
+    margin-left: 10vw;
+  }
 }
 
 #lyrics {
